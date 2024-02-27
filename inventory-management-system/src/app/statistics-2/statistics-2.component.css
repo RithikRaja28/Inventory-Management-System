@@ -1,0 +1,53 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.cards .red {
+  background-color: #f75d76;
+}
+
+.cards .blue {
+  background-color: #629af4;
+}
+
+.cards .green {
+  background-color: #58f08f;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.cards .card p.tip {
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+.cards .card p.second-text {
+  font-size: 0.9em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(5px);
+  transform: scale(0.9, 0.9);
+}

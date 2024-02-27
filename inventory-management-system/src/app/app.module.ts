@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavComponent } from './nav/nav.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { MychartComponent } from './mychart/mychart.component';
+import { Statistics2Component } from './statistics-2/statistics-2.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MychartComponent } from './mychart/mychart.component';
     NavComponent,
     StatisticsComponent,
     MychartComponent,
+    Statistics2Component,
     
   ],
   imports: [
