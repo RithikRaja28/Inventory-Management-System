@@ -9,11 +9,11 @@ Chart.register(...registerables);
 export class Statistics2Component implements OnInit {
   constructor() {}
   ngOnInit(): void {
-    this.RenderChart();
+    this.RenderChart1();
   }
-  RenderChart() {
-    const myChart = new Chart('barchart', {
-      type: 'line',
+  RenderChart1() {
+    const myChart2 = new Chart("barchart", {
+      type: 'pie',
       data: {
         labels: [
           'Mac Book Pro',
